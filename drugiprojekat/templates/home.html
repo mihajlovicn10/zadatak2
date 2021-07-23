@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Home page</title> 
+    </head>
+    <body>
+        <h3>Welcome to the home page</h3>
+        <form action="" method="POST"> 
+            <label for="Enter URL(s): "> 
+                {% csrf_token %} 
+                <textarea name="url" rows="10" cols="10"></textarea>
+            <button type="submit" name="submit">Submit!</button>
+            
+        </form>
+        <h4> {{url}}</h4>
+
+
+
+
+    </body> 
+</html>
